@@ -11,6 +11,7 @@ A beginner-friendly Python "Choose Your Own Adventure" text game where your choi
 - [Tests](#-tests)
 - [License](#-license)
 - [Links](#-links)
+- [Appendix: Project documents](#-appendix-project-documents)
 
 ## 🧭 Overview
 
@@ -28,6 +29,8 @@ crossroad: left or right
 ```
 
 Only one path wins. Feel free to rewrite the story in `src/treasure_island/game.py`. It is part of Udemy's *100 Days of Code: The Complete Python Pro Bootcamp* and has no runtime dependencies.
+
+The repository holds the game in `src/treasure_island/`, its tests in `tests/`, the project documents and the [wiki][wiki] pages in `docs/`, and the SQA and QC framework in `framework/`.
 
 ## 📋 Requirements
 
@@ -57,7 +60,7 @@ pip install -e ".[dev]"
 
 Leave the environment with `deactivate`.
 
-Optional: copy `.env.example` to `.env` and fill in `GIT_TOKEN`. It is only used for repository maintenance (such as setting the repository description and topics), never to run the game. `.env` is git-ignored.
+Optional: copy `.env.example` to `.env` and fill in the tokens you need. They are only used for repository maintenance, never to run the game. `.env` is git-ignored.
 
 ## ▶️ Run
 
@@ -83,6 +86,29 @@ Released under the [GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0-o
 
 ## 🔗 Links
 
-- [Repository](https://git.tirsystem.com/Tirsvad-Udemy-100_days_of_code)
-- [Documentation](https://git.tirsystem.com/Tirsvad-Udemy-100_days_of_code/003-treasure_island#readme)
-- [Issue tracker](https://git.tirsystem.com/Tirsvad-Udemy-100_days_of_code/003-treasure_island/issues)
+- [Repository][repository]
+- [Documentation][documentation]
+- [Issue tracker][issues]
+
+## 📎 Appendix: Project documents
+
+The documents a newcomer needs, in reading order.
+
+| Document | What it tells you |
+| --- | --- |
+| [AGENTS.md][agents] | The rules AI agents follow in this repository |
+| [Wiki][wiki] | How to play, install and develop the game |
+| [Artifact registry][registry] | Where each artifact type lives, the next version, the PO language and domain |
+| [Framework README][framework-readme] | The framework this project uses |
+| [Framework changelog][framework-changelog] | What changed in each framework release |
+
+---
+
+[repository]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/003-treasure-island
+[documentation]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/003-treasure-island/wiki
+[issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/003-treasure-island/issues
+[agents]: ./AGENTS.md
+[wiki]: ./docs/wiki/Home.md
+[registry]: ./docs/artifact-registry.md
+[framework-readme]: ./framework/README.md
+[framework-changelog]: ./framework/CHANGELOG.md
